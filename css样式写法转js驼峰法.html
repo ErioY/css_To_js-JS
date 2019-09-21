@@ -1,0 +1,30 @@
+<!--
+ * @Autor: ErioY
+ * @Date: 2019-09-20 20:30:26
+ * @Email: 1973545559@qq.com
+ * @Github: https://github.com/ErioY
+ * @LastEditors: ErioY
+ * @LastEditTime: 2019-09-20 20:46:08
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // background-color => backgroundColor
+    function cssToJs(str) {
+        var re = /-(\w)/g;
+        str = str.replace(re, function ($0,$1) {
+            return $1.toUpperCase();
+        })
+        return str;
+    }
+    console.log(cssToJs("background-color"));
+    </script>
+</body>
+</html>
